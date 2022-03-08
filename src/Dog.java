@@ -1,0 +1,19 @@
+public class Dog {
+    //Создать class Dog. У собаки должна быть кличка String name и возраст int age.
+    //Создайте геттеры и сеттеры для всех переменных класса Dog.
+    String name;
+    int age;
+
+    String getName(){
+        return name;
+    }
+    int getAge(){
+        return age;
+    }
+    void setName(String name){
+        this.name = name;
+    }
+    void setAge(int age){
+        this.age = age;
+    }
+}
