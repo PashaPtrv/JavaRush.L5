@@ -1,19 +1,24 @@
 public class Dog {
-    //Создать class Dog. У собаки должна быть кличка String name и возраст int age.
-    //Создайте геттеры и сеттеры для всех переменных класса Dog.
-    String name;
-    int age;
+    //Создать класс Dog (собака) с тремя инициализаторами:
+    //- Имя
+    //- Имя, рост
+    //- Имя, рост, цвет
+    private String name;
+    private int height;
+    private String color;
 
-    String getName(){
-        return name;
-    }
-    int getAge(){
-        return age;
-    }
-    void setName(String name){
+    public void initialize(String name){
         this.name = name;
     }
-    void setAge(int age){
-        this.age = age;
+
+    public void initialize(String name, int height){
+        this.name = name;
+        this.height = height;
+    }
+
+    public void initialize(String name, int height, String color){
+        this.name = name;
+        this.height = height;
+        this.color = color;
     }
 }
