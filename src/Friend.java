@@ -1,26 +1,24 @@
-
-//Создать класс Friend (друг) с тремя инициализаторами (тремя методами initialize):
+//Создать класс Friend (друг) с тремя конструкторами:
 //- Имя
 //- Имя, возраст
 //- Имя, возраст, пол
 
+
 public class Friend {
+    private String filename = null;
     private String name;
     private int age;
-    private char gender;
-
-    public void initialize(String name){
-        this.name = name;
-
+    private String gender;
+    public Friend(String name)
+    {
+        this.filename = name;
     }
-    public void initialize(String name, int age){
-        this.name = name;
-        this.age = age;
-
+    public Friend(String name, int age)
+    {
+        this.filename = name + age;
     }
-    public void initialize(String name, int age, char gender){
-        this.name = name;
-        this.age = age;
-        this.gender = gender;
+    public Friend(String name, int age, String gender)
+    {
+        this.filename = name + age + gender;
     }
 }
